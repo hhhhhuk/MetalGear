@@ -6,6 +6,13 @@
     --input-text: rgba(82, 81, 81, 0.5);;
 }
 
+a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
 h1 {
     font-family: 'Inter';
     font-style: normal;
@@ -38,10 +45,15 @@ p {
 button {
     background-color: var(--main-color);
     color: var(--secondary);
-    padding: 12.5px 17.16px 9.5px 16.84px;
+    width: 80px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 input {
     border: 1px solid #FCF9F9;
     background-color: var(--secondary);
     color: var(--input-text);
+    box-sizing: border-box;
 }
