@@ -4,9 +4,6 @@
     height: 710px;
     background: #F5F6F8;
     padding: 60px 0 60px 0;
-    gap: 30px;
-    flex-wrap: wrap;
-    
 }
 .object__title {
     max-width: 256px;
@@ -18,6 +15,10 @@
     line-height: 58px;
     display: flex;
     align-items: center;
+    
+}
+.object__list {
+    display: flex;
 }
 .object__card {
     max-width: 260px;
