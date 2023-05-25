@@ -1,0 +1,47 @@
+.object {
+    max-width: 1920px;
+    width: 100%;
+    background: #F5F6F8;
+    padding: 60px 0 60px 0;
+}
+.object__title {
+    max-width: 256px;
+    height: 62px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    
+}
+.object__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.object__card {
+    max-width: 260px;
+    padding: 30px 30px;
+}
+.card__img {
+    max-width: 260px;
+    height: 300px;
+}
+.card__link {
+    max-width: 260px;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+}
+.link__obj {
+    max-width: 189px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}

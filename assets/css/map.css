@@ -1,0 +1,25 @@
+.map {
+    position: relative;
+}
+.map__block {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+.block__info {
+    max-width: 500px;
+    width: 100%;
+    height: 350px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+.info__title {
+    display: flex;
+    align-items: center;
+}
+.info__Text {
+    display: flex;
+    align-items: center;
+}
