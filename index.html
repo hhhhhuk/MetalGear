@@ -43,14 +43,14 @@
                 <input type="checkbox" id="menu__toggle">
                 <label class="menu-btn" for="menu__toggle"><span></span></label>
                 <section class="menu-box">
-    
+
                 </section>
             </div>
         </div>
     </header>
 
     <main class="main">
-        <section class="object">
+        <section class="object container">
             <h1 class="object__title">
                 Lorem
             </h1>
@@ -59,23 +59,36 @@
             </div>
         </section>
 
-        <section class="slider">
+        <section class="slider container">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider1"></div>
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider2"></div>
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider3"></div>
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider4"></div>
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider5"></div>
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider6"></div>
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider7"></div>
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider8"></div>
-                  <div class="swiper-slide"><img src="assets/img/nozh.jpg" alt="" class="slider9"></div>
+                  <div class="swiper-slide"><img src="assets/img/card/card1.jpg" alt="" class="slider1"></div>
+                  <div class="swiper-slide"><img src="assets/img/card/card2.jpg" alt="" class="slider2"></div>
+                  <div class="swiper-slide"><img src="assets/img/card/card3.jpg" alt="" class="slider3"></div>
+                  <div class="swiper-slide"><img src="assets/img/card/card4.jpg" alt="" class="slider4"></div>
+                  <div class="swiper-slide"><img src="assets/img/card/card5.jpg" alt="" class="slider5"></div>
+                  <div class="swiper-slide"><img src="assets/img/card/card6.jpg" alt="" class="slider6"></div>
+                  <div class="swiper-slide"><img src="assets/img/card/card7.png" alt="" class="slider7"></div>
+                  <div class="swiper-slide"><img src="assets/img/card/card8.jpg" alt="" class="slider8"></div>
                 </div>
+
                 <div class="swiper-pagination"></div>
-              </div>
+            </div>
+            <div class="group-arrow">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </section>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afe16e200c30b96feb74b108a28ff2947dd51f7f800340a12ad42d0920a18a1d9&amp;source=constructor" width="800" height="800" frameborder="0"></iframe>
+        <section class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Addf0ebf2df82cf6d0ac866202ca47c4572f9be2d2173decca3c25b56333bd433&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+            <div class="map__block">
+                <div class="block__info">
+                    <h1 class="info__title">Lorem, ipsum.</h1>
+                    <p class="info__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit sunt, tempora omnis deserunt eaque. Aperiam unde commodi ipsa tempore?</p>
+                </div>
+
+            </div>
+        </section>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -85,6 +98,11 @@
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
       spaceBetween: 50,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       breakpoints: {
         320: {
             slidesPerView: 2,

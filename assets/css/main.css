@@ -57,3 +57,16 @@ input {
     color: var(--input-text);
     box-sizing: border-box;
 }
+.container {
+    padding-right: 140px;
+    padding-left:140px;
+}
+@media (max-width:1024px) {
+    .container {
+        padding-right: 40px;
+        padding-left:40px;
+    }
+    .header__poisk {
+        display: none;
+    }
+}
