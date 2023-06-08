@@ -1,0 +1,28 @@
+.element-animation {
+    opacity: 0;
+  }
+  .element-animation.element-show {
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+  .element-animation.advanteges-list__item:nth-of-type(2).element-show {
+    transition-delay: 0.1s;
+  }
+  .element-animation.advanteges-list__item:nth-of-type(3).element-show {
+    transition-delay: 0.2s;
+  }
+  .element-animation.advanteges-list__item:nth-of-type(4).element-show {
+    transition-delay: 0.3s;
+  }
+  .element-animation.buy-list__item:nth-of-type(2).element-show {
+    transition-delay: 0.2s;
+  }
+  .element-animation.buy-list__item:nth-of-type(3).element-show {
+    transition-delay: 0.3s;
+  }
+  .element-animation.buy-list__item:nth-of-type(4).element-show {
+    transition-delay: 0.4s;
+  }
+  .element-animation.buy-list__item:nth-of-type(5).element-show {
+    transition-delay: 0.5s;
+  }

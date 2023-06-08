@@ -1,0 +1,85 @@
+.menu_burger {
+    display: none;
+}
+.menu-btn {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 17px;
+    right: 17px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.menu-box {
+    transition-duration: 0.5s;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 375px;
+    height: 100%;
+    margin: 0%;
+    padding: 24px 17px;
+    background-color: var(--main-color) ;
+}
+#menu__toggle {
+    opacity: 0%;
+}
+.menu-btn > span,
+.menu-btn > span::after,
+.menu-btn > span::before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+}
+.menu-btn > span::before {
+    content: "";
+    top: -8px;
+}
+.menu-btn > span::after {
+    content: "";
+    top: 8px;
+}
+#menu__toggle:checked ~ .menu-btn > span {
+    transform: rotate(45deg);
+    background-color: rgb(0, 0, 0);
+    
+}
+#menu__toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+    background-color: black;
+}
+#menu__toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: rgb(0, 0, 0);
+}
+#menu__toggle:checked ~ .menu-box {
+    visibility: visible;
+    right: 0;
+}
+#menu__toggle:checked ~ .menu-btn {
+    right: 339px;
+}
+.menu-btn > span,
+.menu-btn > span::after,
+.menu-btn > span::before {
+    transition-duration: 1s;
+}
+.menu-btn {
+    transition-duration: 0.62s;
+}
+
+@media (max-width: 1024px) {
+    .menu_burger {
+        display: block;
+    }
+}

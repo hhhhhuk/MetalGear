@@ -110,3 +110,12 @@
 }
 .menu-box {
 }
+
+@media (max-width:1024px) {
+    .header__dannieH {
+        display: none;
+    }
+    .header__poisk {
+        display: none;
+    }
+}
