@@ -3,7 +3,7 @@
 }
 .menu-btn {
     display: flex;
-    position: fixed;
+    position: absolute;
     align-items: center;
     top: 17px;
     right: 17px;
@@ -35,6 +35,7 @@
 .menu-btn > span::before {
     display: block;
     position: absolute;
+    max-width: 100%;
     width: 100%;
     height: 1.5px;
     background-color: black;
@@ -78,8 +79,17 @@
     transition-duration: 0.62s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .menu_burger {
         display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    .menu-box {
+        width: 320px;
+    }
+    .menu_burger .menu-btn {
+        left: 12px;
     }
 }
